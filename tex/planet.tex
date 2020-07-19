@@ -13,10 +13,59 @@
 \end{align*}
 
 \begin{equation}
-	T_E = \sqst[4]{\frac{\varepsilon \left( 1- a \right) }{4\sigma}},
+	T_E = \sqrt[4]{\frac{\varepsilon \left( 1- a \right) }{4\sigma}},
 \end{equation}
 \begin{align*}
 	\text{где}\;  
-	\sigma & - \text{константк Стефана-Больцмана,}\\
+	T_E & - \text{эффективная температура,}\\
+	\sigma & - \text{константа Стефана-Больцмана,}\\
 	a & - \text{геометрическое альбедо.}
 \end{align*}
+
+\subsubsection{Идеализированный парниковый эффект}
+https://ru.qwe.wiki/wiki/Idealized\_greenhouse\_model
+
+\begin{equation}
+	\Phi_\downarrow = \frac{\varepsilon}{4}
+\end{equation}
+\begin{align*}
+	\text{где}\;  
+	\Phi_\downarrow & - \text{плотность потока входящего излучения,}\\
+	\varepsilon & - \text{солнечная постоянная.}
+\end{align*}
+
+\begin{equation}
+	\Phi_\uparrow = \alpha \sigma T_a^4 + (1-\alpha)\sigma T_s^4;
+\end{equation}
+\begin{align*}
+	\text{где}\;  
+	\Phi_\uparrow & - \text{плотность потока исходящего излучения,}\\
+	\varepsilon & - \text{солнечная постоянная.}
+\end{align*}
+
+Радиационный баланс верхней атмосферы
+\begin{equation}
+	-\frac{1}{4} \varepsilon (1 - a) + \alpha \sigma T_a^4 + (1-\alpha)\sigma T_s^4 = 0.
+\end{equation}
+\begin{align*}
+	\text{где}\;  
+	\alpha & - \text{излучательная и поглощательная способность атмосферы,}\\
+	T_a & - \text{температура верхних слоёв атмосферы,}\\
+	T_s & - \text{температура поверхности.}
+\end{align*}
+
+
+Радиационный баланс поверхности
+\begin{equation}
+	\frac{1}{4} \varepsilon (1 - a) + \alpha \sigma T_a^4 - \sigma T_s^4 = 0.
+\end{equation}
+
+$$2\alpha \sigma T_a^4 - \alpha \sigma T_s^4 = 0;$$
+$$ T_a^4 =  \frac{1}{2} T_s^4;$$
+
+$$\Phi_\uparrow = \alpha \sigma \frac{1}{2} T_s^4 + (1-\alpha)\sigma T_s^4;$$
+$$\Phi_\uparrow =  ( 1-\frac{\alpha}{2})\sigma T_s^4;$$
+
+\begin{equation}
+	T_E^4 =  ( 1-\frac{\alpha}{2}) T_s^4.
+\end{equation}
