@@ -1,0 +1,36 @@
+{
+  "0 debug pnpm:scope": {
+    "selected": 1
+  },
+  "1 debug pnpm:package-manifest": {
+    "initial": {
+      "dependencies": {
+        "@grunmouse/binary": "link:..\\binary"
+      }
+    },
+    "prefix": "E:\\repo\\planet-system"
+  },
+  "2 debug pnpm:context": {
+    "currentLockfileExists": true,
+    "storeDir": "E:\\.pnpm-store\\v3",
+    "virtualStoreDir": "E:\\repo\\planet-system\\node_modules\\.pnpm"
+  },
+  "3 debug pnpm:stage": {
+    "prefix": "E:\\repo\\planet-system",
+    "stage": "resolution_started"
+  },
+  "4 info pnpm": {
+    "message": "@grunmouse/binary is linked to E:\\repo\\planet-system\\node_modules from E:\\repo\\binary",
+    "prefix": "E:\\repo\\planet-system"
+  },
+  "5 error pnpm": {
+    "code": "ERR_PNPM_NO_IMPORTER_MANIFEST_FOUND",
+    "pkgsStack": [],
+    "err": {
+      "name": "Error",
+      "message": "No package.json (or package.yaml, or package.json5) was found in \"E:\\makt-vector\".",
+      "code": "ERR_PNPM_NO_IMPORTER_MANIFEST_FOUND",
+      "stack": "Error: No package.json (or package.yaml, or package.json5) was found in \"E:\\makt-vector\".\n    at readProjectManifest (C:\\Users\\drakov\\AppData\\Roaming\\npm\\node_modules\\pnpm\\dist\\pnpm.cjs:44205:11)\n    at async readProjectManifestOnly (C:\\Users\\drakov\\AppData\\Roaming\\npm\\node_modules\\pnpm\\dist\\pnpm.cjs:44209:24)\n    at async resolveLocal (C:\\Users\\drakov\\AppData\\Roaming\\npm\\node_modules\\pnpm\\dist\\pnpm.cjs:61252:33)\n    at async Object.resolve (C:\\Users\\drakov\\AppData\\Roaming\\npm\\node_modules\\pnpm\\dist\\pnpm.cjs:62426:312)\n    at async run (C:\\Users\\drakov\\AppData\\Roaming\\npm\\node_modules\\pnpm\\dist\\pnpm.cjs:84704:21)"
+    }
+  }
+}

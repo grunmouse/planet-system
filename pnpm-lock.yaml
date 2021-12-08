@@ -1,0 +1,9 @@
+lockfileVersion: 5.3
+
+specifiers:
+  '@grunmouse/binary': link:..\binary
+  '@grunmouse/math-vector': link:..\math-vector
+
+dependencies:
+  '@grunmouse/binary': link:../binary
+  '@grunmouse/math-vector': link:../math-vector

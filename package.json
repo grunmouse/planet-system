@@ -1,0 +1,6 @@
+{
+	"dependencies": {
+		"@grunmouse/binary": "link:..\\binary",
+		"@grunmouse/math-vector": "link:..\\math-vector"
+	}
+}
