@@ -1,0 +1,8 @@
+SpType ::= O|OC|ON|B|BC|BN|A|F|G|K|M|L|T|Y|C|CR|CN|CJ|CH|CHd|D|SC|MS|CV|R|N|SN|D|WD|wd|DA|DB|DC|DZ|DF|DG|DK|DM|DX|DQ|PG|NS|WR|WN|WC|WO|OB|OBN|OBC
+SpPref ::= sd|d|g|sg|c
+SpSubtype ::= 0-9[.1-9]
+LumClass ::= 0|I|II|III|IV|V|VI|VII|VIII|IX
+LumSubclass ::= a|ab|b
+LumSuperscript ::= +|-
+LumFull ::= LumClass[LumSubclass[LumSuperscript]]|esd|g|d
+Lum ::= LumFull[-LumFull]

@@ -20,7 +20,7 @@ for(let i=0; i<dist.length; ++i){
 	const by_pc = count_pc(table);
 	const a = maxDist*2; // Сторона куба
 	const volume = a**3; 
-	const count = by_pc * volume;
+	const count = by_pc * volume * 6/Math.PI; //Количество звёзд с учётом отношения объёмов куба и шара
 	const roul = roulette(table.map(data=>(data.p)));
 	
 	function randomStar(){

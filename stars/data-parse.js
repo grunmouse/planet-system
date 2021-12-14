@@ -28,14 +28,4 @@ const catalog = fs.readFileSync('./catalog', {encoding:'utf-8'}).split(/[\r\n]+/
 	})
 	//.slice(0,100)
 	;
-//console.table(catalog.slice(0,100), ['Name', 'HR', 'Vmag', 'n_Vmag', 'SpType', 'B-V', 'U-B']);
-
-const roulette = require('./roulette.js');
-const  {
-	bv_to_rgb
-} = require('./color_table.js');
-
-const ro = catalog.reduce((akk, data)=>(akk+data.p), 0); //Средняя плотность звёздного населения 1/пк^3
-const P = catalog.map((data)=>(data.p));
-const roul = roulette(P);
-
+console.table(catalog.filter((data)=>(/^[a-z]/g.test(data.SpType))), ['Name', 'Multiple', 'ADS', 'ADScomp', 'SpType', 'n_SpType']);
